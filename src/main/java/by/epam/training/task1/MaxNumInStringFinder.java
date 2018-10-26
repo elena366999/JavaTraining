@@ -11,7 +11,7 @@ public class MaxNumInStringFinder {
             return 0;
         }
 
-        Pattern p = Pattern.compile("\\d+");
+        Pattern p = Pattern.compile("-?\\d+");
         Matcher m = p.matcher(string);
 
         List<Integer> numbers = new ArrayList<>();
