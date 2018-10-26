@@ -3,7 +3,8 @@ package by.epam.training.task1;
 public class ArrayElementSumCounter {
 
     public static int countArrayElementSum(int[] array, int start, int finish) {
-        if (start < 0 || finish < 0) {
+
+        if (start < 0 || finish < 0 || start > finish) {
             return 0;
         }
 
@@ -13,7 +14,7 @@ public class ArrayElementSumCounter {
 
         int sum = 0;
         for (int i = start; i <= finish; i++) {
-            sum = sum + array[i];
+            sum += array[i];
         }
         return sum;
     }
